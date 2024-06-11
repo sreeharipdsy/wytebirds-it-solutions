@@ -568,7 +568,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #002A62;
+  color: #000000;
 }
 .section-title h2::before {
   content: "";
@@ -586,7 +586,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #FF6A00;
+  background: #000000;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -671,14 +671,52 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services .row {
+  margin-inline: 5em;
+}
+@media (max-width: 992px) {
+  .services .row {
+    margin-inline: 0;
+  }
+  .services .icon-box {
+    display: flex !important;
+    padding: 1em !important;
+    align-items: center;
+  }
+  .services .icon-box img {
+    width: 25% !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+  }
+  .services .icon-box h4 {
+    width: 70%;
+    text-align: end !important;
+  }
+}
 .services .icon-box {
   box-shadow: 3px 10px 10px 1px rgba(136, 136, 136, 0.075), 0px -5px 10px rgba(136, 136, 136, 0.075);
-  padding: 50px 30px;
+  padding: 1.5em;
   transition: all ease-in-out 0.4s;
   background: #ffffff;
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid black;
+  display: grid;
+  align-content: space-between;
+}
+.services .icon-box:hover {
+  background: #ffffff;
+  transition: 0.1s;
+  border-bottom: 4px solid black;
 }
 .services .icon-box .icon {
   margin-bottom: 10px;
+}
+.services .icon-box img {
+  width: 75%;
+  margin: auto;
+  padding-block: 1.5em;
 }
 .services .icon-box .icon i {
   color: #003796;
@@ -686,23 +724,17 @@ section {
   transition: 0.3s;
 }
 .services .icon-box h4 {
-  font-weight: 800;
-  margin-bottom: 15px;
-  font-size: 30px;
-}
-.services .icon-box h4 a {
-  color: #FF6A00;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
   transition: ease-in-out 0.3s;
 }
 .services .icon-box p {
   color: #002A62;
   line-height: 24px;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 14px;
   margin-bottom: 0;
-}
-.services .icon-box:hover {
-  border: 0;
 }
 
 
