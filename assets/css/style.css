@@ -358,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  transition: 0.3s;
+  transition: 0.1s;
   z-index: 999;
   background: #000000db;
 }
@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.966);
   overflow-y: auto;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 .navbar-mobile a, .navbar-mobile a:focus { 
   padding: 10px 20px;
@@ -705,9 +705,6 @@ section {
   display: none;
 }
 .services .panel {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 60vh;
   border-radius: 0;
   color: #000000;
@@ -719,10 +716,11 @@ section {
 }
 .services .panel-icon-box {
   box-shadow: 3px 10px 10px 1px rgba(136, 136, 136, 0.075), 0px -5px 10px rgba(136, 136, 136, 0.075);
-  padding: 0.5em;
+  padding-inline: 0.5em;
+  padding-block: 1em;
   transition: all ease-in-out 0.3s;
   background: #000000;
-  height: 50vh;
+  height: 65vh;
   width: 15%;
   align-content: space-between;
   margin: 3px;
@@ -752,6 +750,11 @@ section {
     right: -6em;
   }
 }
+@media (max-width: 767px) {
+  .services .panel-icon-box {
+    height: 55vh;
+  }
+}
 @media (max-width: 992px) {
   .services .row {
     display: none;
@@ -774,7 +777,6 @@ section {
   }
 }
 .services .panel.active {
-  display: flex;
   flex: 5;
   background: white;
   width: 100%;
