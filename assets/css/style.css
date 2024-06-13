@@ -677,6 +677,9 @@ section {
 .services, .process {
   padding-top: 0;
 }
+.services .section-title {
+  padding-bottom: 0;
+}
 @media (max-width: 992px) {
   .services .row {
     margin-inline: 0;
@@ -709,7 +712,25 @@ section {
     padding-bottom: 1em;
     width: 80%;
   }
+}/*
+.services .container-desktop {
+  display: flex;
+  width: 80%;
 }
+.services .desktopCardHover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  cursor: pointer;
+  flex: 0.2;
+  margin:8px;
+  position: relative;
+  transition: all 0.7s ease-out;
+}
+.services .desktopCardHover.active {
+  flex: 3;
+}*/
 .services .icon-box {
   box-shadow: 3px 10px 10px 1px rgba(136, 136, 136, 0.075), 0px -5px 10px rgba(136, 136, 136, 0.075);
   padding: 1.5em;
