@@ -718,7 +718,7 @@ section {
   box-shadow: 3px 10px 10px 1px rgba(136, 136, 136, 0.075), 0px -5px 10px rgba(136, 136, 136, 0.075);
   padding-inline: 0.5em;
   padding-block: 1em;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.2s;
   background: #000000;
   height: 65vh;
   width: 15%;
@@ -845,7 +845,7 @@ section {
 .services .icon-box {
   box-shadow: 3px 10px 10px 1px rgba(136, 136, 136, 0.075), 0px -5px 10px rgba(136, 136, 136, 0.075);
   padding: 1.5em;
-  transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.3s;
   background: #ffffff;
   height: auto;
   display: grid;
