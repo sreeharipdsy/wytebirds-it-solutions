@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .logo-two img {
-  margin-left: 7.5em;
+  margin-left: 12.25em;
   border-radius: 35px;
 }
 .logo-two h1 {
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  bottom: 7.75em;
+  bottom: 9.25em;
   color: #ffffff;
   width: 100%;
 }
@@ -674,16 +674,21 @@ section {
 .services .row {
   margin-inline: 5em;
 }
+.services, .process {
+  padding-top: 0;
+}
 @media (max-width: 992px) {
   .services .row {
     margin-inline: 0;
   }
-  .services .icon-box {
-    display: flex !important;
-    padding: 1em !important;
-    align-items: center;
+  .services, .process {
+    padding-top: 60px 0;
   }
-  .services .icon-box img {
+  .services .icon-box {
+    padding: 0 !important;
+    padding-bottom: 1em !important;
+  }
+  /*.services .icon-box img {
     width: 25% !important;
     padding: 0 !important;
     margin-left: 0 !important;
@@ -691,6 +696,18 @@ section {
   .services .icon-box h4 {
     width: 70%;
     text-align: end !important;
+  }*/
+}
+@media (max-width: 576px) {
+  .services .mobile-card-container {
+    justify-content: unset !important;
+  }
+  .services .container > .row {
+    overflow-x: auto;
+  }
+  .services .icon-box-container {
+    padding-bottom: 1em;
+    width: 80%;
   }
 }
 .services .icon-box {
@@ -737,6 +754,21 @@ section {
   margin-bottom: 0;
 }
 
+/*--------------------------------------------------------------
+# process
+--------------------------------------------------------------*/
+/*#process {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 12em;
+  background-image: url('../process-desktop.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+.process img {
+  width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Cta
@@ -747,16 +779,14 @@ section {
   padding: 120px 0;
 }
 .cta h3 {
-  color: #FF6A00;
+  color: #ffffff;
   font-size: 35px;
   font-weight: 700;
 }
 .cta p {
-  font-family: "Jost", sans-serif;
   color: #fff;
 }
 .cta .cta-btn {
-  font-family: "Jost", sans-serif;
   font-weight: 600;
   font-size: 20px;
   display: inline-block;
