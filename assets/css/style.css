@@ -882,6 +882,18 @@ section {
 }*/
 .process img {
   width: 100%;
+  display: block;
+}
+.process .mobile-view {
+  display: none;
+}
+@media (max-width: 992px) {
+  .process .desktop-view {
+    display: none;
+  }
+  .process .mobile-view {
+    display: block;
+  }
 }
 
 /*--------------------------------------------------------------
