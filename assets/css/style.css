@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 1em;
   z-index: 996;
-  background: #000000;
+  background: #00000082;
   width: 35px;
   height: 35px;
   border-radius: 0px;
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #002a6279;
+  background: #00000082;
 }
 .back-to-top.active {
   visibility: visible;
