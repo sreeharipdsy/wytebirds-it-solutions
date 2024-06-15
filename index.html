@@ -23,6 +23,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- Template Main CSS File -->
@@ -500,20 +501,42 @@
           <h2>Team</h2>
         </div>
 
+        <!--<div class="card">
+          <img src="assets/team/img-1.jpeg" alt="">
+          <div class="content">
+            <h2>Sreehari S</h2>
+            <h3>Founder & CEO</h3>
+            <p>As the founder and Web developer at WyteBirds, I have honed my skills in Managing customers & developing stunning responsive websites.</p>
+            <a href="">Follow Account</a>
+          </div>
+        </div>-->
         <div class="justify-content-center row">
 
           <div class="col-lg-5">
-            <div class="member d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+            <div class="member d-flex justify-content-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/team/img-1.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <a href="https://sreeharipdsy.com">Sreehari S</a>
-                <span>Software Developer</span>
-                <p>Founder & CEO</p>
+                <div>
+                  <h1>Sreehari S</h1>
+                  <p>Founder | Developer</p>
+                </div>
+                <hr>
+                <div style="margin-bottom: 10px;">
+                  <a id="follow" type="button" onclick="document.getElementById('id01').style.display='grid'">Follow Account</a>
+                </div>
+              </div>
+              <div id="id01" class="modal w3-modal w3-animate-zoom">
+                <div class="modal-in w3-modal-content w3-card-4">
+                  <div class="team-social">
+                    <a href="https://linkedin.com/in/sreeharipdsy">Linkedin</a>
+                    <a href="https://instagram.com/sreeharipdsy">Instgram</a>
+                    <a href="https://sreeharipdsy.in">Website</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section><!-- End Team Section -->
 
@@ -839,6 +862,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/panel.js"></script>
+  <script src="assets/js/modal.js"></script>
 
 </body>
 

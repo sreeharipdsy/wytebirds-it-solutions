@@ -1077,47 +1077,227 @@ section {
 .team .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 0px;
+  padding: 0;
+  padding-inline: 1.25em;
+  border-radius: 5px;
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
   background: #fff;
   transition: 0.5s;
+  align-items: center;
 }
 .team .member .pic {
   overflow: hidden;
-  width: 180px;
-  border-radius: 5px;
+  display: grid;
+  align-items: center;
+  height: 14em;
 }
 .team .member .pic img {
   transition: ease-in-out 0.3s;
+  border-radius: 5px;
+  width: 10em;
+  height: 80%;
+  object-fit: cover;
 }
 .team .member .member-info {
-  padding-left: 30px;
+  padding-left: inherit;
+  margin-left: 2px;
+  height: 11em;
+  display: grid;
+  align-content: space-evenly;
 }
-.team .member a {
-  font-weight: 700;
+.team .member-info hr {
+  margin-top: -10px;
+  width: 200%;
+}
+.team .member h1 {
+  font-weight: 600;
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 24px;
   color: #000000;
 }
-.team .member span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-}
-.team .member span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #cbd6e9;
-  bottom: 0;
-  left: 0;
-}
 .team .member p {
-  margin: 10px 0 0 0;
+  font-size: 18px;
+}
+.team .member a {
+  color: white;
+  background: black;
+  padding: 8px;
+  padding-inline: 15px;
+  border-radius: 5px;
+  border: 2px solid #000000;
+  transition: 0.3s;
+}
+.team .member a:hover {
+  color: #000000;
+  background: #ffffff;
+}
+@media (min-width: 1400px) {
+  .team .member-info hr {
+    width: 18.5em;
+  }
+}
+@media (max-width: 1399px) {
+  .team .member-info hr {
+    width: 14em;
+  }
+}
+@media (max-width: 1200px) {
+  .team .member-info hr {
+    width: 12em;
+  }
+}
+@media (max-width: 992px) {
+  .team .member-info hr {
+    width: 30em;
+  }
+}
+@media (max-width: 767px) {
+  .team .member-info hr {
+    width: 19em;
+  }
+}
+@media (max-width: 567px) {
+  .team .member-info hr {
+    width: 17em;
+  }
+}
+@media (max-width: 471px) {
+  .team .member-info hr {
+    width: 14em;
+  }
+}
+@media (max-width: 414px) {
+  .team .member-info hr {
+    width: 11em;
+  }
+  .team .member h1 {
+    font-size: 22px;
+  }
+  .team .member p {
+    font-size: 13px;
+  }
+  .team .member a {
+    font-size: 14px;
+  }
+}
+.team .modal {
+  padding: 1em;
+  background: transparent;
+}
+.team .modal-in {
+  animation: animatezoom 0.3s;
+  width: 35%;
+  margin-left: 65%;
+  border-radius: 5px;
+  border-left: 1px solid #000000bf;
+  border-bottom: 1px solid #000000bf;
+  box-shadow: -2px 2px 10px 0 rgb(0 0 0 / 8%);
+}
+.w3-teal, .w3-hover-teal:hover {
+  background-color: #ffffff !important;
+}
+.team-social {
+  display: grid;
+  padding: 1em;
+}
+.team .modal a {
+  padding: 4px;
+  background: white;
+  color: black;
+  margin: 2px;
+  transition: 0.3s;
+  text-align: center;
+  border: none;
+}
+.team .modal a:hover {
+  background: black;
+  color: white;
+}
+@media (max-width: 600px) {
+  .w3-modal-content {
+      margin: 22px 0px;
+      width: auto !important;
+  }
+}
+
+.team .card {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  max-width: 650px;
+  padding: 50px 30px 50px 20px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+.team .card img {
+  max-width: 280px;
+  width: 35vw;
+  height: 300px;
+  object-fit: cover;
+  margin-left: -60px;
+  margin-right: 30px;
+  border-radius: inherit;
+  box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+}
+.team .card h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+.team .card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.75;
+}
+.team .card p {
   font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.5em;
+}
+.team .card a {
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: #000000;
+  color: #ffffff;
+  padding: 16px 26px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+@media (width <= 600px) {
+  .team .card {
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .team .card img {
+    margin: -100px 0 30px 0;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .team .card h2 {
+    margin-right: 0;
+  }
+  .team .card p {
+    max-width: 360px;
+  }
+}
+@media (width <= 440x) {
+  .team .card img {
+    height: 45vw;
+    width: 45vw;
+    border-radius: 50%;
+    margin-top: -140px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1248,7 +1428,7 @@ section {
   padding-bottom: 8px;
 }
 .contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 5px;
   box-shadow: none;
   font-size: 15px;
   border: 2px solid #0000002d;
@@ -1263,7 +1443,7 @@ section {
   padding: 0px 0px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #cbcbcb21;
+  background: #cbcbcb14;
   border: 2px solid #000000;
   padding: 12px 35px;
   margin-top: 15px;
