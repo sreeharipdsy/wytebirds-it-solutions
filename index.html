@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -312,13 +312,15 @@
         <div class="process-view">
           <a href="process.html">
             <div class="desktop-view">
-              <img src="assets/process.JPG" alt="">
+              <img draggable="false" src="assets/process.JPG" alt="">
             </div>
           </a>
           <div class="mobile-view">
-            <div class="bg-1"><img src="assets/process-mobile/bg-1.png" alt=""></div>
-            <div class="bg-2"><img src="assets/process-mobile/bg-2.png" alt=""></div>
-            <div class="bg-3"><img src="assets/process-mobile/bg-3.jpeg" alt=""></div>
+            <a href="process.html">
+              <div class="bg-1"><img draggable="false" src="assets/process-mobile/bg-1.png" alt=""></div>
+              <div class="bg-2"><img draggable="false" src="assets/process-mobile/bg-2.png" alt=""></div>
+              <div class="bg-3"><img draggable="false" src="assets/process-mobile/bg-3.jpeg" alt=""></div> 
+            </a>
           </div>
         </div>
       </div>
@@ -524,7 +526,7 @@
                   <a id="follow" type="button" onclick="document.getElementById('id01').style.display='grid'">Follow Account</a>
                 </div>
               </div>
-              <div id="id01" class="modal w3-modal w3-animate-zoom">
+              <div id="id01" class="modal w3-modal">
                 <div class="modal-in w3-modal-content w3-card-4">
                   <div class="team-social">
                     <a href="https://linkedin.com/in/sreeharipdsy">Linkedin</a>

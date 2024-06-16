@@ -1,0 +1,36 @@
+@media (min-width: 993px) {
+    .fixed-top .container {
+        padding-block: 7px;
+    }
+}
+@media (max-width: 992px) {
+    .logo-one h1 {
+        display: flex;
+        padding-block: 0.5em !important;
+        margin-left: 5px !important;
+        color: white !important;
+    } 
+}
+.process-body .content .row {
+    margin-top: 1em;
+}
+.process-body .content .left img {
+    width: 100%;
+    padding: 2.5em;
+}
+.process-body .content .left .heading {
+    justify-content: center;
+}
+.process-body .content .left .heading p {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-block: auto;
+    background: black;
+    color: white;
+    padding: 0px 11px 0 11px;
+    border-radius: 50%;
+}
+.process-body .content .left .heading h1 {
+    margin-bottom: 0;
+    font-size: 30px;
+}

@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .logo-two img {
-  margin-left: 12.25em;
+  margin-left: 13.25em;
   border-radius: 35px;
 }
 .logo-two h1 {
@@ -755,6 +755,12 @@ section {
     display: grid !important;
   }
   .services .panel.active img {
+    width: 75% !important;
+    margin: auto;
+  }
+}
+@media (max-width: 467px) {
+  .services .panel.active {
     width: 100% !important;
   }
 }
@@ -1190,7 +1196,8 @@ section {
 }
 .team .modal {
   padding: 1em;
-  background: transparent;
+  background: #000000cb;
+  border-radius: 5px;
 }
 .team .modal-in {
   animation: animatezoom 0.3s;
