@@ -1,3 +1,4 @@
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -651,8 +652,9 @@ section {
 .services .row {
   margin-inline: 5em;
 }
-.services, .process {
+.services, .process, .team, .contact {
   padding-top: 0;
+  padding-bottom: 100px;
 }
 .services .section-title {
   padding-bottom: 0;
@@ -661,7 +663,7 @@ section {
   .services .row {
     margin-inline: 0;
   }
-  .services, .process {
+  .services, .process, .team {
     padding-top: 60px;
   }
   .services .icon-box {
@@ -805,7 +807,8 @@ section {
     padding-bottom: 1em;
     width: 80%;
   }
-}/*
+}
+/*
 .services .container-desktop {
   display: flex;
   width: 80%;
@@ -893,12 +896,14 @@ section {
   }
   .process .mobile-view {
     display: block;
+    margin-inline: 3em;
   }
 }
 
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
+/*
 .cta {
   background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(20, 30, 48, 0.795)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
@@ -938,11 +943,12 @@ section {
     align-items: center;
     justify-content: flex-end;
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+/*
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
@@ -1015,11 +1021,12 @@ section {
 }
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+/*
 .portfolio-details {
   padding-top: 40px;
 }
@@ -1069,7 +1076,7 @@ section {
 }
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Team
@@ -1218,85 +1225,6 @@ section {
   .w3-modal-content {
       margin: 22px 0px;
       width: auto !important;
-  }
-}
-
-.team .card {
-  display: flex;
-  align-items: center;
-  width: 75vw;
-  max-width: 650px;
-  padding: 50px 30px 50px 20px;
-  background: hsl(0, 0%, 100%);
-  border-radius: 20px;
-}
-.team .card img {
-  max-width: 280px;
-  width: 35vw;
-  height: 300px;
-  object-fit: cover;
-  margin-left: -60px;
-  margin-right: 30px;
-  border-radius: inherit;
-  box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
-}
-.team .card h2 {
-  font-size: 26px;
-  font-weight: 400;
-  margin-top: 0;
-  margin-right: 30px;
-  margin-bottom: 10px;
-}
-.team .card h3 {
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0;
-  opacity: 0.75;
-}
-.team .card p {
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 30px;
-  opacity: 0.5em;
-}
-.team .card a {
-  display: grid;
-  place-items: center;
-  border: 0;
-  background: #000000;
-  color: #ffffff;
-  padding: 16px 26px;
-  font-size: 16px;
-  border-radius: 10px;
-}
-@media (width <= 600px) {
-  .team .card {
-    margin: 0 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 60px;
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
-  }
-  .team .card img {
-    margin: -100px 0 30px 0;
-    width: 100%;
-    max-width: 1000px;
-  }
-  .team .card h2 {
-    margin-right: 0;
-  }
-  .team .card p {
-    max-width: 360px;
-  }
-}
-@media (width <= 440x) {
-  .team .card img {
-    height: 45vw;
-    width: 45vw;
-    border-radius: 50%;
-    margin-top: -140px;
   }
 }
 
@@ -1477,55 +1405,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #ffffff11
-}
-#footer .footer-newsletter {
-  padding: 50px 0;
-  text-align: center;
-  font-size: 15px;
-}
-#footer .footer-newsletter h4 {
-  font-size: 24px;
-  margin: 0 0 20px 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 600;
-  color: #002A62;
-}
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
-  text-align: left;
-}
-#footer .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-#footer .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: 2px solid #002A62;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #002a621c;
-  color: #002A62;
-  font-weight: bold;
-  transition: 0.3s;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-#footer .footer-newsletter form input[type=submit]:hover {
-  color: white;
-  font-weight: 700;
-  background: #002A62;
+  background: #000000;
 }
 #footer .footer-top {
   padding: 60px 0 0px 0;
@@ -1538,20 +1418,19 @@ section {
   margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-weight: 600;
-  color: #37517e;
+  color: #ffffff;
 }
 #footer .footer-top .footer-contact p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
-  color: #002A62;
+  color: #ffffff;
 }
 #footer .footer-top h4 {
+  text-align: center;
   font-size: 16px;
   font-weight: bold;
-  color: #002A62;
+  color: #ffffff;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1562,24 +1441,20 @@ section {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #FF6A00;
-  font-size: 18px;
-  line-height: 1;
+  padding-block: 2em;
 }
 #footer .footer-top .footer-links ul li {
   padding: 10px 0;
+  padding-block: 1em;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #footer .footer-top .footer-links ul li:first-child {
   padding-top: 0;
 }
 #footer .footer-top .footer-links ul a {
-  color: #002A62;
-  font-family: "Jost", sans-serif;
+  color: #ffffff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1587,10 +1462,13 @@ section {
 #footer .footer-top .footer-links ul a:hover {
   font-weight: 500;
 }
+#footer .social-links {
+  margin-top: -7em;
+}
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #002A62;
+  background: #000000;
   color: white;
   line-height: 1;
   padding: 8px 0;
@@ -1602,14 +1480,14 @@ section {
   transition: 0.3s;
 }
 #footer .footer-top .social-links a:hover {
-  background: white;
-  color: #002A62;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
   text-decoration: none;
 }
 #footer .footer-bottom {
   padding-top: 10px;
   padding-bottom: 30px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 #footer .copyright {
   font-size: 15px;
@@ -1622,7 +1500,23 @@ section {
 #footer .credits a {
   transition: 0.3s;
 }
+#footer .logo {
+  display: grid;
+  justify-items: center;
+}
+#footer .logo img {
+  width: 50%;
+  height: 60%;
+  object-fit: cover;
+}
 @media (max-width: 768px) {
+  #footer .logo img {
+    height: auto;
+  }
+  #footer .social-links {
+    margin-bottom: 5em;
+    margin-top: 0;
+  }
   #footer .footer-bottom {
     padding-top: 0px;
     padding-bottom: 20px;
