@@ -10,9 +10,18 @@
         margin-left: 5px !important;
         color: white !important;
     } 
+    .process-body .content .left .heading p {
+        font-size: 16px !important;
+        margin-right: 5px !important;
+        padding: 0px 8px 0 8px !important;
+    }
+    .process-body .content .left .heading h1 {
+        font-size: 24px !important;
+    }
 }
 .process-body .content .row {
     margin-top: 1em;
+    margin-bottom: 3em;
 }
 .process-body .content .left img {
     width: 100%;
@@ -75,6 +84,18 @@
     color: white;
     background: black;
 }
+.accordion button {
+    border: none;
+    background: #ffffff;
+    color: #000000;
+    transition: 0.4s;
+}
+.accordion.active button {
+    border: none;
+    background: #000000;
+    transition: 0.4s;
+    color: #ffffff;
+}
 .accordion:after {
     content: '\002B';
     color: #000000;
@@ -83,8 +104,20 @@
     margin-left: 5px;
 } 
 .accordion.active:after {
+    margin-top: 3px;
     content: "\2212";
     color: white;
+}
+.process-body .content .right .summary-title:after {
+    content: '\002B';
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: 0.4s;
+}
+.process-body .content .right .summary-title.open:after {
+    content: '\2212';
 }
 .panel {
     padding: 0 18px;
@@ -92,7 +125,7 @@
     border-radius: 10px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.4s ease-in-out;
 }
 .accordion.active.panel {
     max-height: 100%;
@@ -100,8 +133,13 @@
 .panel ul {
     margin-block: 1em;
     padding-left: 20px;
+    transition: max-height 0.4s ease-in-out;
 }
 .panel ul li {
-    list-style: lower-roman;
+    list-style: square;
     font-size: 14px;
+}
+.panel.show {
+    max-height: 300px;
+    transition: max-height 0.4s ease-in-out;
 }
