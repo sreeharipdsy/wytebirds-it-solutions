@@ -21,7 +21,26 @@
 }
 .process-body .content .row {
     margin-top: 1em;
-    margin-bottom: 3em;
+}
+.process-body .process-arrow img {
+    width: 35%;
+    height: 15em;
+    object-fit: cover;
+}
+@media (max-width: 992px) {
+    .process-body .process-arrow img {
+        width: 100%;
+        height: 8em;
+    }
+    .row .left {
+        background: whitesmoke;
+        padding-top: 2em;
+        width: 94%;
+        margin: auto;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border-block: 3px solid #000000;
+    }
 }
 .process-body .content .left img {
     width: 100%;
