@@ -791,12 +791,12 @@ section {
 }
 .services .panel.active a {
   display: block;
-  justify-self: center;
+  text-align: center;
   background: #000000;
   color: #ffffff;
   border-radius: 3px;
-  padding: 3px 15px 3px 15px;
-  margin-bottom: 1em;
+  padding-block: 5px;
+  margin-inline: 0.5em;
 }
 .services .panel.active img {
   width: 50%;
@@ -835,7 +835,7 @@ section {
 }*/
 .services .icon-box {
   box-shadow: 3px 10px 10px 1px rgba(136, 136, 136, 0.075), 0px -5px 10px rgba(136, 136, 136, 0.075);
-  padding: 1.5em;
+  padding: 1em;
   transition: all ease-in-out 0.3s;
   background: #ffffff;
   height: auto;
@@ -855,6 +855,7 @@ section {
 }
 .services .icon-box img {
   width: 75%;
+  height: 10em;
   margin: auto;
   padding-block: 1.5em;
 }
@@ -865,7 +866,7 @@ section {
 }
 .services .icon-box h4 {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   color: #000000;
   transition: ease-in-out 0.3s;
 }
@@ -875,6 +876,14 @@ section {
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 0;
+}
+.services .icon-box a {
+  text-align: center;
+  background: black;
+  color: white;
+  padding-block: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 
 /*--------------------------------------------------------------
