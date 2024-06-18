@@ -13,7 +13,7 @@
     .process-body .content .left .heading p {
         font-size: 16px !important;
         margin-right: 5px !important;
-        padding: 0px 8px 0 8px !important;
+        padding: 0px 7px 0 7px !important;
     }
     .process-body .content .left .heading h1 {
         font-size: 24px !important;
@@ -89,6 +89,8 @@
     background: #ffffff;
     color: #000000;
     transition: 0.4s;
+    text-align: left;
+    max-width: 90%;
 }
 .accordion.active button {
     border: none;
@@ -104,7 +106,6 @@
     margin-left: 5px;
 } 
 .accordion.active:after {
-    margin-top: 3px;
     content: "\2212";
     color: white;
 }
