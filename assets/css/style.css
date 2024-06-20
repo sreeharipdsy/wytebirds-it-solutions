@@ -1479,7 +1479,7 @@ section {
   font-weight: 500;
 }
 #footer .social-links {
-  margin-top: -7em;
+  margin-top: -5em;
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
@@ -1521,12 +1521,13 @@ section {
   justify-items: center;
 }
 #footer .logo img {
-  width: 50%;
+  width: 35%;
   height: 60%;
   object-fit: cover;
 }
 @media (max-width: 768px) {
   #footer .logo img {
+    width: 50%;
     height: auto;
   }
   #footer .social-links {
