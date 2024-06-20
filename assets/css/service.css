@@ -108,6 +108,7 @@
     }
     .service-body .accordion.active {
         margin-top: 0;
+        padding-inline: 1em;
     }
     .service-body .panel ul {
         padding-inline: 0 !important;
