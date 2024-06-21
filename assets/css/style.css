@@ -171,14 +171,13 @@ h1, h2, h3, h4, h5, h6 {
   #header.header-scrolled, #header.header-inner-pages {
     padding: 0;
   }
-  .logo-two h1 {
-    color: #ffffff !important;
-  }
-  .logo-one img, .logo-two h1 {
+  .logo-one h1 {
     display: block;
+    margin-left: 5px !important;
+    color: #ffffff !important;
     transition: all ease-in-out 1s;
   }
-  .logo-one h1, .logo-two img {
+  .logo-one img, .logo-two img, .logo-two h1 {
     display: none;
   }
 }
@@ -425,6 +424,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
+}
+.bi-list::before {
+  content: "\f479";
+  color: transparent;
+  background: url(../branding/logo-icon-white.png);
+  background-position: center;
+  background-size: cover;
+  padding: 15px;
 }
 
 /*--------------------------------------------------------------
