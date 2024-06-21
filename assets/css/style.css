@@ -439,16 +439,23 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .mission {
   padding-top: 0em;
+  padding-bottom: 1em;
 }
-.mission .section-title p {
+.mission .section-title p, .intro .conclusion p {
   margin-top: 1em;
   font-size: 21px;
 }
 
 @media (max-width: 992px) {
-  .mission .section-title p {
+  .mission {
+    padding-bottom: 60px;
+  }
+  .mission .section-title p, .intro .conclusion p {
     margin-top: 1.25em;
     font-size: 16px;
+  }
+  .intro .conclusion p {
+    margin-top: 2.5em;
   }
 }
 
@@ -484,6 +491,7 @@ h1, h2, h3, h4, h5, h6 {
   .intro .intro-content p {
     font-size: 15px;
     margin-top: 1em;
+    margin-bottom: 0;
   }
 }
 
