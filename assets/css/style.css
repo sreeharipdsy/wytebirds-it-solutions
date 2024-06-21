@@ -513,7 +513,36 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.1em;
   color: #000000;
+  -webkit-animation: focus-in-expand 0.8s ease-in-out both;
+	animation: focus-in-expand 0.8s ease-in-out both;
 }
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 #hero .btn-get-started {
   font-weight: 500;
   font-size: 16px;
@@ -527,7 +556,25 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(0, 0, 0);
   background: #ffffff;
 }
-
+#hero .first-button {
+  position: absolute;
+  margin-top: 10em;
+  width: -webkit-fill-available;
+}
+.first-button a {
+  font-size: 18px;
+  background: black;
+  color: white;
+  padding: 0.5em;
+  padding-inline: 1em;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: 0.3s ease-in-out;
+}
+.first-button a:hover {
+  color: #000000;
+  background: #ffffff;
+}
 @media (min-width: 1024px) {
   .sectionFirst{
     margin-top: 0;
